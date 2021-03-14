@@ -175,7 +175,7 @@ input[type="button"] {
   padding: 0 30px;
   color: #555;
   text-align: center;
-  font-size: 11px;
+  font-size: 1.5rem;
   font-weight: 600;
   line-height: 38px;
   letter-spacing: .1rem;
@@ -205,9 +205,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  color: #fff;
+  background-color: #cf6f77;
+  border-color: #cf6f77; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -219,8 +219,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #B6565E;
+  border-color: #B6565E; }
 
 
 /* Forms
@@ -401,7 +401,6 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
@@ -426,7 +425,7 @@ there.
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
-  padding: 8rem 0 7rem;
+  padding: 7rem 0 6rem;
   text-align: center;
 }
 .section-heading,
@@ -436,26 +435,28 @@ there.
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.phones {
+.onigiris {
   position: relative;
 }
-.phone {
+.onigiri {
   position: relative;
   max-width: 80%;
   margin: 3rem auto -12rem;
 }
-.phone + .phone {
+.onigiri + .onigiri {
   display: none;
 }
 
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
+  background-image: url('../images/onigiri-pattern.jpg');
+  background-size: repeat;
   color: #fff;
   padding-bottom: 5rem;
+  background-position: center;
 }
+
 .value-multiplier {
   margin-bottom: .5rem;
   color: #11DFC7;
@@ -476,34 +477,24 @@ there.
 
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.categories {
-  background-image: url('../images/values-bg.jpg');
-  background-size: cover;
-  color: #fff;
-}
-.categories .section-description {
-  margin-bottom: 4rem;
-}
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
-    padding: 12rem 0 11rem;
+    padding: 8rem 0;
   }
   .hero {
-    padding-bottom: 12rem;
+    padding-bottom: 16rem;
     text-align: left;
     height: 165px;
   }
-  .phone {
+  .onigiri {
     position: absolute;
-    top: -7rem;
     right: 3rem;
     max-height: 362px;
     z-index: 3;
   }
-  .phone + .phone {
-    top: -6rem;
+  .onigiri + .onigiri {
     display: block;
     max-width: 73.8%;
     right: 0;
@@ -524,47 +515,78 @@ there.
     font-size: 2.6rem;
   }
   .section {
-    padding: 14rem 0 15rem;
+    padding: 10rem 0 13rem;
   }
   .hero {
-    padding: 16rem 0 14rem;
+    padding: 10rem 0 15rem;
   }
   .section-description {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
-  .phone {
-    top: -14rem;
-    right: 5rem;
+  .onigiri {
+    top: -3rem;
+    right: 3rem;
     max-height: 510px;
   }
-  .phone + .phone {
-    top: -12rem;
+  .onigiri + .onigiri {
+    top: -4rem;
     max-height: 472px;
   }
-  .categories {
-    padding: 15rem 0 8rem;
+  .lighten-the-load {
+    padding-bottom: 5rem;
   }
 }
 
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .section {
-    padding: 20rem 0 19rem;
+    padding: 12rem 0;
   }
   .hero {
-    padding: 22rem 0;
+    padding: 12rem 0 20rem;
   }
   .hero-heading {
     font-size: 3.0rem;
   }
-  .phone {
-    top: -16rem;
+  .onigiri {
+    top: -8rem;
     max-height: 615px;
   }
-  .phone + .phone {
-    top: -14rem;
+  .onigiri + .onigiri {
+    top: -9rem;
     max-height: 570px;
   }
+  .lighten-the-load {
+    padding-bottom: 6rem;
+  }
+}
+
+
+/* Custom Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.pantone-2340-c {
+  color: #CF6F77;
+}
+
+.inquiring-minds p, .inquiring-minds h5 {
+  text-align: left;
+}
+
+.page-header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+.page-header img {
+  width: 48px;
+  height: 48px;
+}
+
+.page-footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
