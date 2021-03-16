@@ -187,6 +187,11 @@ input[type="button"] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
+.button.large {
+  height: 50px;
+  line-height: 48px;
+  font-size: 2.5rem;
+}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
