@@ -578,6 +578,9 @@ there.
 .inquiring-minds p, .inquiring-minds h5 {
   text-align: left;
 }
+.inquiring-minds h5 {
+  font-weight: 400;
+}
 
 .page-header {
   padding: 1rem;
