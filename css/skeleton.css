@@ -587,6 +587,7 @@ there.
   display: flex;
   align-items: center;
 }
+
 .page-header img {
   width: 48px;
   height: 48px;
@@ -597,4 +598,14 @@ there.
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.privacy {
+  text-align: left;
+}
+
+.logo-anchor {
+  text-decoration: none;
+  color: #333;
 }
